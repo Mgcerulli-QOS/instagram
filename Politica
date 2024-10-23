@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - App Instagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Política de Privacidade</h1>
+    <p>Esta Política de Privacidade descreve como o nosso aplicativo do Instagram coleta, usa e protege as informações pessoais dos usuários que se conectam ao nosso serviço.</p>
+
+    <h2>1. Coleta de Informações</h2>
+    <p>Nosso aplicativo do Instagram pode coletar informações básicas do perfil, como nome de usuário, fotos, e dados de engajamento (curtidas, seguidores, etc.) para fornecer insights e métricas sobre o desempenho do perfil, apenas para nossos clientes que são páginas profissionais no Instagram/Facebook. Essas informações são obtidas com o consentimento do usuário durante o processo de autenticação.</p>
+
+    <h2>2. Uso das Informações</h2>
+    <p>As informações coletadas são usadas exclusivamente para fornecer métricas e análises de desempenho para os perfis do Instagram gerenciados pelos clientes da Asset Marketing Digitial. Não utilizamos as informações para fins de publicidade, venda ou marketing direcionado.</p>
+
+    <h2>3. Compartilhamento de Informações</h2>
+    <p>Garantimos que as informações coletadas por meio do nosso aplicativo não serão compartilhadas, vendidas ou distribuídas para terceiros. As informações coletadas são utilizadas apenas dentro da nossa plataforma e para os fins descritos nesta política.</p>
+
+    <h2>4. Segurança</h2>
+    <p>Tomamos medidas razoáveis para proteger as informações dos usuários contra acesso não autorizado, uso indevido ou divulgação. No entanto, como nenhum método de transmissão pela internet é 100% seguro, não podemos garantir a segurança absoluta dos dados transmitidos.</p>
+
+    <h2>5. Consentimento</h2>
+    <p>Ao usar o nosso aplicativo, o usuário consente com a coleta e o uso das informações conforme descrito nesta Política de Privacidade. O usuário tem o direito de revogar esse consentimento a qualquer momento, o que pode resultar na interrupção de determinados serviços oferecidos pelo aplicativo.</p>
+
+    <h2>6. Alterações na Política de Privacidade</h2>
+    <p>Reservamo-nos o direito de modificar esta Política de Privacidade a qualquer momento. Quaisquer alterações serão publicadas nesta página, e o usuário será notificado em caso de mudanças significativas.</p>
+
+    <h2>7. Contato</h2>
+    <p>Se você tiver dúvidas ou preocupações sobre nossa Política de Privacidade, entre em contato conosco através do e-mail: <a href="mailto:contato@suamarketing.com">contato@suamarketing.com</a>.</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Asset Marketing Digital Ltda - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
