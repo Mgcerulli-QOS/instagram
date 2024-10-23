@@ -4,7 +4,7 @@ app.use(express.json()); // Para processar JSON no corpo da requisição
 
 // Rota para validação do webhook
 app.get('/webhook', (req, res) => {
-    let VERIFY_TOKEN = "SEU_TOKEN_DE_VERIFICACAO";
+    let VERIFY_TOKEN = "cb97a5f1e5726969a7e6ce28ac7ba74c";
 
     // Pegue os parâmetros da query string
     let mode = req.query['hub.mode'];
