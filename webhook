@@ -1,0 +1,36 @@
+const express = require('express');
+const app = express();
+app.use(express.json()); // Para processar JSON no corpo da requisição
+
+// Rota para validação do webhook
+app.get('/webhook', (req, res) => {
+    let VERIFY_TOKEN = "SEU_TOKEN_DE_VERIFICACAO";
+
+    // Pegue os parâmetros da query string
+    let mode = req.query['hub.mode'];
+    let token = req.query['hub.verify_token'];
+    let challenge = req.query['hub.challenge'];
+
+    // Verifique se o token é válido
+    if (mode && token === VERIFY_TOKEN) {
+        // Responda com o desafio se o token estiver correto
+        res.status(200).send(challenge);
+    } else {
+        // Token inválido
+        res.sendStatus(403);
+    }
+});
+
+// Rota para receber dados POST do webhook
+app.post('/webhook', (req, res) => {
+    console.log('Dados recebidos:', req.body);
+
+    // Processar o evento recebido
+    res.sendStatus(200); // Responda com 200 OK
+});
+
+// Iniciar o servidor
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Servidor rodando na porta ${PORT}`);
+});
