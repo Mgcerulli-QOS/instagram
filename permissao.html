@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autorizar Gerenciamento de Instagram pela empresa - Asset Marketing Digital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Autorizar Gerenciamento de Conta do Instagram</h1>
+    <p>Para permitir que nossa empresa gerencie suas redes sociais, clique no botão abaixo e siga as instruções:</p>
+    <button onclick="autorizarAcesso()">Autorizar Acesso</button>
+
+    <script>
+        function autorizarAcesso() {
+            const appId = '1094150752106208'; // Substitua pelo ID do seu aplicativo
+            const redirectUri = 'https://seuwebsite.com/callback'; // Substitua pelo seu redirect URI
+            const scope = 'pages_manage_posts,pages_read_engagement,instagram_basic'; // Permissões necessárias
+            
+            const authUrl = `https://www.facebook.com/v10.0/dialog/oauth?client_id=${appId}&redirect_uri=${redirectUri}&scope=${scope}&response_type=token`;
+            
+            window.location.href = authUrl;
+        }
+    </script>
+</body>
+</html>
