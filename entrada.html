@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asset Marketing Digital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Cor de fundo clara */
+            color: #333; /* Cor do texto */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #4a90e2; /* Cor do título */
+        }
+        button {
+            background-color: #4caf50; /* Cor do botão */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        button:hover {
+            background-color: #45a049; /* Cor do botão ao passar o mouse */
+        }
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input {
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Conecte-se ao Asset Marketing Digital</h1>
+    
+    <!-- Botão para redirecionar para a autenticação da Meta -->
+    <a href="https://www.facebook.com/v10.0/dialog/oauth?client_id=1094150752106208&redirect_uri=https://mgcerulli-qos.github.io/instagram/&scope=public_profile,email">
+        <button>Conectar com Facebook</button>
+    </a>
+    
+    <form id="tokenForm" action="http://169.254.15.210:3000/save-token" method="POST">
+        <h2>Insira seu Token:</h2>
+        <input type="text" name="token" placeholder="Token de acesso" required>
+        <button type="submit">Enviar Token</button>
+    </form>
+
+</body>
+</html>
