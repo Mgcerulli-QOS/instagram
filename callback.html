@@ -12,7 +12,7 @@
         const code = urlParams.get('code');
 
         if (code) {
-            fetch(`https://graph.facebook.com/v10.0/oauth/access_token?client_id=1094150752106208&redirect_uri=https://seuusuario.github.io/seu-repositorio/callback&client_secret=cb97a5f1e5726969a7e6ce28ac7ba74c&code=${code}`)
+            fetch(`https://graph.facebook.com/v10.0/oauth/access_token?client_id=2296468370688908&redirect_uri=https://seuusuario.github.io/seu-repositorio/callback&client_secret=cb97a5f1e5726969a7e6ce28ac7ba74c&code=${code}`)
                 .then(response => response.json())
                 .then(data => {
                     if (data.access_token) {
