@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback</title>
+</head>
+<body>
+    <h1>Processando a autorização...</h1>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+
+        if (code) {
+            fetch(`https://graph.facebook.com/v10.0/oauth/access_token?client_id=1094150752106208&redirect_uri=https://seuusuario.github.io/seu-repositorio/callback&client_secret=cb97a5f1e5726969a7e6ce28ac7ba74c&code=${code}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.access_token) {
+                        // Armazene o token de maneira segura (aqui é apenas um exemplo para teste)
+                        localStorage.setItem('accessToken', data.access_token);
+                        alert('Autorização realizada com sucesso!');
+                    } else {
+                        alert('Erro ao obter o token');
+                    }
+                })
+                .catch(error => console.error('Erro:', error));
+        } else {
+            alert('Nenhum código de autorização encontrado');
+        }
+    </script>
+</body>
+</html>
